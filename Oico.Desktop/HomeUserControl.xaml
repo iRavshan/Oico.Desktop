@@ -1,0 +1,282 @@
+﻿<UserControl x:Class="Oico.Desktop.HomeUserControl"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oico.Desktop"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Margin="16"
+                            Grid.Column="0" Height="140"
+                            CornerRadius="10" Background="#fff">
+                <StackPanel Orientation="Vertical">
+                    <Grid Margin="12 12 12 0">
+                        <Label Content="Kun davomida"
+                                   Foreground="#b4b4b4"
+                                   FontSize="12" FontFamily="Poppins"
+                                   HorizontalAlignment="Left"/>
+                        <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                    </Grid>
+                    <TextBlock Text="870 000" Name="InfoTodaySum"
+                                       Margin="16 10 0 0" Foreground="#424242"
+                                       FontSize="22" FontFamily="Poppins ExtraBold"/>
+                    <Border VerticalAlignment="Bottom"
+                                    Margin="0 15 0 0" BorderThickness="0 1 0 0"
+                                    BorderBrush="#f1f1f1">
+                        <Grid Margin="12 12 12 12">
+                            <Label Content="+33,57%"
+                                       Foreground="#02b075"
+                                       HorizontalAlignment="Left"
+                                       FontFamily="Poppins SemiBold"
+                                       FontSize="11" VerticalAlignment="Center"/>
+                            <Label Content="12.05.2022"
+                                       Foreground="#b4b4b4"
+                                       HorizontalAlignment="Right"
+                                       FontFamily="Poppins"
+                                       VerticalAlignment="Center"
+                                       FontSize="11" Name="InfoToday"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <Border Margin="16"
+                            Grid.Column="1" Height="140"
+                            CornerRadius="10" Background="#fff">
+                <StackPanel Orientation="Vertical">
+                    <Grid Margin="12 12 12 0">
+                        <Label Content="Hafta mobaynida"
+                                   Foreground="#b4b4b4"
+                                   FontSize="12" FontFamily="Poppins"
+                                   HorizontalAlignment="Left"/>
+                        <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                    </Grid>
+                    <TextBlock Text="12 340 000"
+                                       Margin="16 10 0 0" Foreground="#424242"
+                                       FontSize="22" FontFamily="Poppins ExtraBold"/>
+                    <Border VerticalAlignment="Bottom"
+                                    Margin="0 15 0 0" BorderThickness="0 1 0 0"
+                                    BorderBrush="#f1f1f1">
+                        <Grid Margin="12 12 12 12">
+                            <Label Content="+33,57%"
+                                       Foreground="#e65d60"
+                                       HorizontalAlignment="Left"
+                                       FontFamily="Poppins SemiBold"
+                                       FontSize="11" VerticalAlignment="Center"/>
+                            <Label Content="12.05.2022 - 19.05.2022"
+                                       Foreground="#b4b4b4"
+                                       HorizontalAlignment="Right"
+                                       FontFamily="Poppins"
+                                       VerticalAlignment="Center"
+                                       FontSize="11" Name="InfoWeek"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <Border Margin="16"
+                            Grid.Column="2" Height="140"
+                            CornerRadius="10" Background="#fff">
+                <StackPanel Orientation="Vertical">
+                    <Grid Margin="12 12 12 0">
+                        <Label Content="Oy davomida"
+                                   Foreground="#b4b4b4"
+                                   FontSize="12" FontFamily="Poppins"
+                                   HorizontalAlignment="Left"/>
+                        <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                    </Grid>
+                    <TextBlock Text="110 768 000"
+                                       Margin="16 10 0 0" Foreground="#424242"
+                                       FontSize="22" FontFamily="Poppins ExtraBold"/>
+                    <Border VerticalAlignment="Bottom"
+                                    Margin="0 15 0 0" BorderThickness="0 1 0 0"
+                                    BorderBrush="#f1f1f1">
+                        <Grid Margin="12 12 12 12">
+                            <Label Content="+33,57%"
+                                       Foreground="#02b075"
+                                       HorizontalAlignment="Left"
+                                       FontFamily="Poppins SemiBold"
+                                       FontSize="11" VerticalAlignment="Center"/>
+                            <Label Content="may"
+                                       Foreground="#b4b4b4"
+                                       HorizontalAlignment="Right"
+                                       FontFamily="Poppins"
+                                       VerticalAlignment="Center"
+                                       FontSize="11" Name="InfoMonth"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+            <Border Margin="16"
+                            Grid.Column="3" Height="140"
+                            CornerRadius="10" Background="#fff">
+                <StackPanel Orientation="Vertical">
+                    <Grid Margin="12 12 12 0">
+                        <Label Content="Yil mobaynida"
+                                   Foreground="#b4b4b4"
+                                   FontSize="12" FontFamily="Poppins"
+                                   HorizontalAlignment="Left"/>
+                        <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                    </Grid>
+                    <TextBlock Text="9 999 999 999"
+                                       Margin="16 10 0 0" Foreground="#424242"
+                                       FontSize="22" FontFamily="Poppins ExtraBold"/>
+                    <Border VerticalAlignment="Bottom"
+                                    Margin="0 15 0 0" BorderThickness="0 1 0 0"
+                                    BorderBrush="#f1f1f1">
+                        <Grid Margin="12 12 12 12">
+                            <Label Content="+33,57%"
+                                       Foreground="#e65d60"
+                                       HorizontalAlignment="Left"
+                                       FontFamily="Poppins SemiBold"
+                                       FontSize="11" VerticalAlignment="Center"/>
+                            <Label Content="2022"
+                                       Foreground="#b4b4b4"
+                                       HorizontalAlignment="Right"
+                                       FontFamily="Poppins"
+                                       VerticalAlignment="Center"
+                                       FontSize="11" Name="InfoYear"/>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid>
+            <StackPanel Orientation="Vertical"
+                                Margin="16 5" HorizontalAlignment="Left">
+                <Border Background="#ffff"
+                                CornerRadius="10" Margin="0 0 0 21"
+                                Height="200" Width="650">
+                    <StackPanel Orientation="Vertical">
+                        <Grid Margin="12 10">
+                            <Label Content="So'nggi xaridlar"
+                                               Foreground="#424242"
+                                               FontSize="14" FontFamily="Poppins Semibold"
+                                               HorizontalAlignment="Left"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+                <Border Background="#fff"
+                                CornerRadius="10" Margin="0 0 0 21"
+                                Height="260">
+                    <StackPanel Orientation="Vertical">
+                        <Border BorderBrush="#f1f1f1"
+                                        BorderThickness="0 0 0 1">
+                            <Grid Margin="12 10">
+                                <Label Content="So'nggi xaridlar"
+                                               Foreground="#424242"
+                                               FontSize="14" FontFamily="Poppins Semibold"
+                                               HorizontalAlignment="Left"/>
+                                <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                            </Grid>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="16 5"
+                                HorizontalAlignment="Right">
+                <Border Background="#645df7"
+                                CornerRadius="10" Margin="0 0 0 21"
+                                Height="140" Width="330">
+                </Border>
+                <Border Background="#fff"
+                                CornerRadius="10" Margin="0 0 0 21"
+                                Height="320" Width="330">
+                    <StackPanel Orientation="Vertical">
+                        <Border BorderBrush="#f1f1f1"
+                                        BorderThickness="0 0 0 1">
+                            <Grid Margin="12 10">
+                                <Label Content="So'nggi xaridlar"
+                                               Foreground="#424242"
+                                               FontSize="14" FontFamily="Poppins Semibold"
+                                               HorizontalAlignment="Left"/>
+                                <materialDesign:PackIcon Kind="DotsHorizontal"
+                                                         HorizontalAlignment="Right"
+                                                         VerticalAlignment="Center"
+                                                         Foreground="#b4b4b4"/>
+                            </Grid>
+                        </Border>
+                        <Grid Margin="12">
+                            <StackPanel Orientation="Vertical" Margin="12 0 0 0">
+                                <TextBlock Text="Rustam"
+                                           Foreground="#424242" FontFamily="Poppins Semibold"/>
+                                <TextBlock Text="12.05.2022 17:50" FontSize="12" FontFamily="Poppins"
+                                                   Margin="0 3 0 0" Foreground="#b4b4b4"/>
+                            </StackPanel>
+                            <Label Content="670 000" Foreground="#02b075"
+                                           FontFamily="Poppins Semibold" FontSize="16"
+                                           HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="12">
+                            <StackPanel Orientation="Vertical" Margin="12 0 0 0">
+                                <TextBlock Text="Ravshan Dev"
+                                           Foreground="#424242" FontFamily="Poppins Semibold"/>
+                                <TextBlock Text="12.05.2022 17:50" FontSize="12" FontFamily="Poppins"
+                                                   Margin="0 3 0 0" Foreground="#b4b4b4"/>
+                            </StackPanel>
+                            <Label Content="1 202 000" Foreground="#02b075"
+                                           FontFamily="Poppins Semibold" FontSize="16"
+                                           HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="12">
+                            <StackPanel Orientation="Vertical" Margin="12 0 0 0">
+                                <TextBlock Text="Saidahmad"
+                                           Foreground="#424242" FontFamily="Poppins Semibold"/>
+                                <TextBlock Text="12.05.2022 17:50" FontSize="12" FontFamily="Poppins"
+                                                   Margin="0 3 0 0" Foreground="#b4b4b4"/>
+                            </StackPanel>
+                            <Label Content="3 500 000" Foreground="#02b075"
+                                           FontFamily="Poppins Semibold" FontSize="16"
+                                           HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="12">
+                            <StackPanel Orientation="Vertical" Margin="12 0 0 0">
+                                <TextBlock Text="Mohinur"
+                                           Foreground="#424242" FontFamily="Poppins Semibold"/>
+                                <TextBlock Text="12.05.2022 17:50" FontSize="12" FontFamily="Poppins"
+                                                   Margin="0 3 0 0" Foreground="#b4b4b4"/>
+                            </StackPanel>
+                            <Label Content="256 000" Foreground="#02b075"
+                                           FontFamily="Poppins Semibold" FontSize="16"
+                                           HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                        <Grid Margin="12">
+                            <StackPanel Orientation="Vertical" Margin="12 0 0 0">
+                                <TextBlock Text="Ravshan Dev"
+                                           Foreground="#424242" FontFamily="Poppins Semibold"/>
+                                <TextBlock Text="12.05.2022 17:50" FontSize="12" FontFamily="Poppins"
+                                                   Margin="0 3 0 0" Foreground="#b4b4b4"/>
+                            </StackPanel>
+                            <Label Content="1 200 000" Foreground="#02b075"
+                                           FontFamily="Poppins Semibold" FontSize="16"
+                                           HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>
